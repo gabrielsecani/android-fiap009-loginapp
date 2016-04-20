@@ -1,8 +1,8 @@
 package br.com.fiap.rm72468.loginapp;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -19,14 +19,14 @@ public class ValidadeLoginActivity extends AppCompatActivity {
 
         Toast.makeText(ValidadeLoginActivity.this, user + "/" + password, Toast.LENGTH_SHORT).show();
 
-        Log.i("ValidadeLogin",user+ "/" + password);
+        Log.i("ValidadeLogin", user + "/" + password);
     }
 
     @Override
     public void finish() {
         Log.i("ValidadeLogin", "finish");
 
-        Intent ret=new Intent();
+        Intent ret = new Intent();
         ret.putExtra("retorno", "Obrigado!");
         setResult(RESULT_OK, ret);
 
